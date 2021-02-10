@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="584.0" prefWidth="772.0" style="-fx-border-color: #4f1f5c; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="az.javafx.LoginController">
+    <bottom>
+        <Pane prefHeight="59.0" prefWidth="752.0" style="-fx-background-color: #c281d4;" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="332.0" layoutY="21.0" prefHeight="17.0" prefWidth="61.0" text="2020-2021" />
+            </children>
+        </Pane>
+    </bottom>
+    <top>
+        <Pane prefHeight="102.0" prefWidth="752.0" style="-fx-background-color: #c281d4;" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="TOP_CENTER" ellipsisString="" layoutX="194.0" layoutY="28.0" prefHeight="46.0" prefWidth="365.0" text="StudentManagmentApp" textFill="#151a09">
+                    <font>
+                        <Font name="System Bold" size="30.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+    </top>
+    <center>
+        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #e0b9eb;" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="311.0" layoutY="44.0" prefHeight="62.0" prefWidth="116.0" text="Login">
+                    <font>
+                        <Font name="System Bold" size="40.0" />
+                    </font>
+                </Label>
+                <Label layoutX="232.0" layoutY="146.0" prefHeight="17.0" prefWidth="61.0" text="Username">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label layoutX="231.0" layoutY="222.0" prefHeight="17.0" prefWidth="55.0" text="Password">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="usernameField" layoutX="231.0" layoutY="170.0" prefHeight="41.0" prefWidth="310.0" />
+                <TextField fx:id="passwordField" layoutX="232.0" layoutY="246.0" prefHeight="41.0" prefWidth="310.0" />
+            <Button fx:id="loginBtn" layoutX="305.0" layoutY="311.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="52.0" style="-fx-background-color: white; -fx-border-color: #4f1f5c; -fx-border-radius: 5;" text="Login">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="registrationBtn" layoutX="376.0" layoutY="311.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="95.0" style="-fx-background-color: white; -fx-border-color: #4f1f5c; -fx-border-radius: 5;" text="Registration">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            </children></Pane>
+    </center>
+</BorderPane>
