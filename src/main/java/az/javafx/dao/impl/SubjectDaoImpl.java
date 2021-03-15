@@ -3,7 +3,6 @@ package az.javafx.dao.impl;
 import az.javafx.config.DBConfig;
 import az.javafx.dao.SubjectDao;
 import az.javafx.model.Subject;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

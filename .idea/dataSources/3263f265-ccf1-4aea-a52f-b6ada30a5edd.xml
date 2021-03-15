@@ -915,246 +915,279 @@ SELECT|sys.sys_config
 </ObjectGrants>
     </user>
     <table id="285" parent="6" name="group1"/>
-    <table id="286" parent="6" name="s_contact_info"/>
-    <table id="287" parent="6" name="student"/>
-    <table id="288" parent="6" name="subjects"/>
-    <table id="289" parent="6" name="t_contact_info"/>
-    <table id="290" parent="6" name="teacher"/>
-    <table id="291" parent="6" name="user"/>
-    <column id="292" parent="285" name="id">
+    <table id="286" parent="6" name="group_student"/>
+    <table id="287" parent="6" name="s_contact_info"/>
+    <table id="288" parent="6" name="student"/>
+    <table id="289" parent="6" name="subjects"/>
+    <table id="290" parent="6" name="t_contact_info"/>
+    <table id="291" parent="6" name="teacher"/>
+    <table id="292" parent="6" name="user"/>
+    <column id="293" parent="285" name="id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="293" parent="285" name="group_name">
+    <column id="294" parent="285" name="group_name">
       <Position>2</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="294" parent="285" name="active">
+    <column id="295" parent="285" name="active">
       <Position>3</Position>
       <DataType>tinyint|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>1</DefaultExpression>
     </column>
-    <key id="295" parent="285" name="PRIMARY">
+    <column id="296" parent="285" name="teacher_t_id">
+      <Position>4</Position>
+      <DataType>varchar(45)|0s</DataType>
+    </column>
+    <column id="297" parent="285" name="subject_id">
+      <Position>5</Position>
+      <DataType>varchar(45)|0s</DataType>
+    </column>
+    <key id="298" parent="285" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="296" parent="286" name="id">
+    <column id="299" parent="286" name="id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="297" parent="286" name="email">
+    <column id="300" parent="286" name="group1_id">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
     </column>
-    <column id="298" parent="286" name="phone">
+    <column id="301" parent="286" name="student_s_id">
       <Position>3</Position>
       <DataType>varchar(45)|0s</DataType>
     </column>
-    <column id="299" parent="286" name="active">
+    <column id="302" parent="286" name="active">
+      <Position>4</Position>
+      <DataType>tinyint|0s</DataType>
+      <DefaultExpression>1</DefaultExpression>
+    </column>
+    <key id="303" parent="286" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="304" parent="287" name="id">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="305" parent="287" name="email">
+      <Position>2</Position>
+      <DataType>varchar(45)|0s</DataType>
+    </column>
+    <column id="306" parent="287" name="phone">
+      <Position>3</Position>
+      <DataType>varchar(45)|0s</DataType>
+    </column>
+    <column id="307" parent="287" name="active">
       <Position>4</Position>
       <DataType>varchar(45)|0s</DataType>
       <DefaultExpression>&apos;1&apos;</DefaultExpression>
     </column>
-    <key id="300" parent="286" name="PRIMARY">
+    <key id="308" parent="287" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="301" parent="287" name="s_id">
+    <column id="309" parent="288" name="s_id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="302" parent="287" name="s_name">
+    <column id="310" parent="288" name="s_name">
       <Position>2</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="303" parent="287" name="s_surname">
+    <column id="311" parent="288" name="s_surname">
       <Position>3</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="304" parent="287" name="s_age">
+    <column id="312" parent="288" name="dob">
       <Position>4</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="305" parent="287" name="s_seriaNum">
+    <column id="313" parent="288" name="s_seriaNum">
       <Position>5</Position>
       <DataType>varchar(7)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="306" parent="287" name="active">
+    <column id="314" parent="288" name="active">
       <Position>6</Position>
       <DataType>tinyint|0s</DataType>
       <DefaultExpression>1</DefaultExpression>
     </column>
-    <column id="307" parent="287" name="contact_info_id">
+    <column id="315" parent="288" name="contact_info_id">
       <Position>7</Position>
       <DataType>int|0s</DataType>
     </column>
-    <column id="308" parent="287" name="gender">
+    <column id="316" parent="288" name="gender">
       <Position>8</Position>
       <DataType>varchar(45)|0s</DataType>
     </column>
-    <index id="309" parent="287" name="fk">
+    <index id="317" parent="288" name="fk">
       <ColNames>contact_info_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="310" parent="287" name="PRIMARY">
+    <key id="318" parent="288" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>s_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="311" parent="287" name="fk">
+    <foreign-key id="319" parent="288" name="fk">
       <ColNames>contact_info_id</ColNames>
       <RefTableName>s_contact_info</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="312" parent="288" name="id">
+    <column id="320" parent="289" name="id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="313" parent="288" name="subject_name">
+    <column id="321" parent="289" name="subject_name">
       <Position>2</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="314" parent="288" name="active">
+    <column id="322" parent="289" name="active">
       <Position>3</Position>
       <DataType>tinyint|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>1</DefaultExpression>
     </column>
-    <key id="315" parent="288" name="PRIMARY">
+    <key id="323" parent="289" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="316" parent="289" name="id">
+    <column id="324" parent="290" name="id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="317" parent="289" name="email">
+    <column id="325" parent="290" name="email">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
     </column>
-    <column id="318" parent="289" name="phone">
+    <column id="326" parent="290" name="phone">
       <Position>3</Position>
       <DataType>varchar(45)|0s</DataType>
     </column>
-    <column id="319" parent="289" name="active">
+    <column id="327" parent="290" name="active">
       <Position>4</Position>
       <DataType>varchar(45)|0s</DataType>
       <DefaultExpression>&apos;1&apos;</DefaultExpression>
     </column>
-    <key id="320" parent="289" name="PRIMARY">
+    <key id="328" parent="290" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="321" parent="290" name="t_id">
+    <column id="329" parent="291" name="t_id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="322" parent="290" name="t_name">
+    <column id="330" parent="291" name="t_name">
       <Position>2</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="323" parent="290" name="t_surname">
+    <column id="331" parent="291" name="t_surname">
       <Position>3</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="324" parent="290" name="t_age">
+    <column id="332" parent="291" name="t_age">
       <Position>4</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="325" parent="290" name="t_seriaNum">
+    <column id="333" parent="291" name="t_seriaNum">
       <Position>5</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="326" parent="290" name="active">
+    <column id="334" parent="291" name="active">
       <Position>6</Position>
       <DataType>tinyint|0s</DataType>
       <DefaultExpression>1</DefaultExpression>
     </column>
-    <column id="327" parent="290" name="contact_info_id">
+    <column id="335" parent="291" name="contact_info_id">
       <Position>7</Position>
       <DataType>int|0s</DataType>
     </column>
-    <column id="328" parent="290" name="gender">
+    <column id="336" parent="291" name="gender">
       <Position>8</Position>
       <DataType>varchar(45)|0s</DataType>
     </column>
-    <index id="329" parent="290" name="fk_idx">
+    <index id="337" parent="291" name="fk_idx">
       <ColNames>contact_info_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="330" parent="290" name="PRIMARY">
+    <key id="338" parent="291" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>t_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="331" parent="290" name="foreign">
+    <foreign-key id="339" parent="291" name="foreign">
       <ColNames>contact_info_id</ColNames>
       <RefTableName>t_contact_info</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="332" parent="291" name=" id">
+    <column id="340" parent="292" name=" id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="333" parent="291" name="username">
+    <column id="341" parent="292" name="username">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="334" parent="291" name="surname">
+    <column id="342" parent="292" name="surname">
       <Position>3</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="335" parent="291" name="firstname">
+    <column id="343" parent="292" name="firstname">
       <Position>4</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="336" parent="291" name="gender">
+    <column id="344" parent="292" name="gender">
       <Position>5</Position>
       <DataType>varchar(45)|0s</DataType>
     </column>
-    <column id="337" parent="291" name="active">
+    <column id="345" parent="292" name="active">
       <Position>6</Position>
       <DataType>tinyint|0s</DataType>
       <DefaultExpression>1</DefaultExpression>
     </column>
-    <column id="338" parent="291" name="password">
+    <column id="346" parent="292" name="password">
       <Position>7</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="339" parent="291" name="PRIMARY">
+    <key id="347" parent="292" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames> id</ColNames>
       <Primary>1</Primary>
